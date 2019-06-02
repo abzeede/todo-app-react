@@ -1,12 +1,10 @@
 import React from 'react'
+import TodoForm from 'components/TodoForm'
 
 class App extends React.Component {
   state = {
     items: [],
-    todo: '',
   }
-
-  setTodo = todo => this.setState({ todo })
 
   generateUID = () => new Date().getTime()
 
@@ -53,8 +51,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <input onChange={e => this.setTodo(e.target.value)} value={this.state.todo} />
-        <button onClick={() => this.onCreateTodo(this.state.todo)}>create todo</button>
+        <TodoForm onSubmit={this.onCreateTodo} placeholder="Add a to-do..." />
         <div>ProgressBar</div>
         <div>todo</div>
         <ul>

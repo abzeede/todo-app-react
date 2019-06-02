@@ -13,7 +13,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js')
 
-importScripts('/precache-manifest.79d2a77601748174791105da4adb7bf2.js')
+importScripts('/todo-app-react/precache-manifest.aa5cf348d88107f0256b69ac219925d6.js')
 
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -31,6 +31,6 @@ workbox.core.clientsClaim()
 self.__precacheManifest = [].concat(self.__precacheManifest || [])
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {})
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL('/index.html'), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL('/todo-app-react/index.html'), {
   blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/],
 })

@@ -64,7 +64,7 @@
     (f.o = function(e, r) {
       return Object.prototype.hasOwnProperty.call(e, r)
     }),
-    (f.p = '/')
+    (f.p = '/todo-app-react/')
   var i = (window.webpackJsonp = window.webpackJsonp || []),
     l = i.push.bind(i)
   ;(i.push = r), (i = i.slice())
@@ -72,4 +72,4 @@
   var p = l
   t()
 })([])
-//# sourceMappingURL=runtime~main.c5541365.js.map
+//# sourceMappingURL=runtime~main.09986612.js.map

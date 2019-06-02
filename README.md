@@ -1,8 +1,9 @@
 # TO-DO APP
-##### Desktop:
-![alt desktop](https://imgur.com/1ngcNDg)
-##### Mobile:
-![alt mobile](https://imgur.com/qysBD4w)
+##### Desktop
+<img src="https://imgur.com/1ngcNDg.png" width="300" />
+
+##### Mobile
+<img src="https://i.imgur.com/qysBD4w.png" width="300" />
 
 ## Demo
 https://abzeede.github.io/todo-app-react/

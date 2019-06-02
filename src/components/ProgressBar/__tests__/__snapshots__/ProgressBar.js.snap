@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar should render properly 1`] = `
+<ProgressBar
+  items={
+    Array [
+      Object {
+        "detail": "todo 1",
+        "done": false,
+        "id": 1,
+      },
+      Object {
+        "detail": "todo 2",
+        "done": true,
+        "id": 2,
+      },
+      Object {
+        "detail": "todo 3",
+        "done": false,
+        "id": 3,
+      },
+      Object {
+        "detail": "todo 4",
+        "done": false,
+        "id": 4,
+      },
+    ]
+  }
+  showPercent={true}
+>
+  <div
+    className="progress"
+  >
+    <div
+      className="progress__text"
+    >
+      25
+      %
+    </div>
+    <div
+      className="progress__bar"
+    >
+      <div
+        className="progress__bar--active"
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+      />
+    </div>
+  </div>
+</ProgressBar>
+`;
+
+exports[`ProgressBar should render properly 2`] = `
+<ProgressBar
+  items={
+    Array [
+      Object {
+        "detail": "todo 1",
+        "done": false,
+        "id": 1,
+      },
+      Object {
+        "detail": "todo 2",
+        "done": true,
+        "id": 2,
+      },
+      Object {
+        "detail": "todo 3",
+        "done": false,
+        "id": 3,
+      },
+      Object {
+        "detail": "todo 4",
+        "done": false,
+        "id": 4,
+      },
+    ]
+  }
+  showPercent={false}
+>
+  <div
+    className="progress"
+  >
+    <div
+      className="progress__bar"
+    >
+      <div
+        className="progress__bar--active"
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+      />
+    </div>
+  </div>
+</ProgressBar>
+`;

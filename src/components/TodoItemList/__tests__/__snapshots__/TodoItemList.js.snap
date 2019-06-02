@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItemList should render properly 1`] = `
+<TodoItemList
+  items={
+    Array [
+      Object {
+        "detail": "todo 1",
+        "done": false,
+        "id": 1,
+      },
+      Object {
+        "detail": "todo 2",
+        "done": false,
+        "id": 2,
+      },
+      Object {
+        "detail": "todo 3",
+        "done": false,
+        "id": 3,
+      },
+    ]
+  }
+  onDelete={[Function]}
+  onEdit={[Function]}
+  onToggleDone={[Function]}
+>
+  <ol
+    className="todo-item-list"
+  >
+    <TodoItem
+      detail="todo 1"
+      done={false}
+      id={1}
+      key="1"
+      onDelete={[Function]}
+      onEdit={[Function]}
+      onToggleDone={[Function]}
+    >
+      <li
+        className="todo-item"
+      >
+        <span
+          className="todo-item__checkbox"
+        >
+          <Checkbox
+            checked={false}
+            onClick={[Function]}
+          >
+            <span
+              className="checkbox false"
+              onClick={[Function]}
+            />
+          </Checkbox>
+        </span>
+        <input
+          className="todo-item__input "
+          onChange={[Function]}
+          value="todo 1"
+        />
+        <button
+          className="todo-item__remove-btn"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-trash"
+          />
+        </button>
+      </li>
+    </TodoItem>
+    <TodoItem
+      detail="todo 2"
+      done={false}
+      id={2}
+      key="2"
+      onDelete={[Function]}
+      onEdit={[Function]}
+      onToggleDone={[Function]}
+    >
+      <li
+        className="todo-item"
+      >
+        <span
+          className="todo-item__checkbox"
+        >
+          <Checkbox
+            checked={false}
+            onClick={[Function]}
+          >
+            <span
+              className="checkbox false"
+              onClick={[Function]}
+            />
+          </Checkbox>
+        </span>
+        <input
+          className="todo-item__input "
+          onChange={[Function]}
+          value="todo 2"
+        />
+        <button
+          className="todo-item__remove-btn"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-trash"
+          />
+        </button>
+      </li>
+    </TodoItem>
+    <TodoItem
+      detail="todo 3"
+      done={false}
+      id={3}
+      key="3"
+      onDelete={[Function]}
+      onEdit={[Function]}
+      onToggleDone={[Function]}
+    >
+      <li
+        className="todo-item"
+      >
+        <span
+          className="todo-item__checkbox"
+        >
+          <Checkbox
+            checked={false}
+            onClick={[Function]}
+          >
+            <span
+              className="checkbox false"
+              onClick={[Function]}
+            />
+          </Checkbox>
+        </span>
+        <input
+          className="todo-item__input "
+          onChange={[Function]}
+          value="todo 3"
+        />
+        <button
+          className="todo-item__remove-btn"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-trash"
+          />
+        </button>
+      </li>
+    </TodoItem>
+  </ol>
+</TodoItemList>
+`;

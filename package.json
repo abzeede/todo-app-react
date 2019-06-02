@@ -2,6 +2,7 @@
   "name": "todo-list-app",
   "version": "0.1.0",
   "private": false,
+  "license": "MIT",
   "homepage": "https://abzeede.github.io/todo-app-react",
   "dependencies": {
     "react": "^16.8.6",

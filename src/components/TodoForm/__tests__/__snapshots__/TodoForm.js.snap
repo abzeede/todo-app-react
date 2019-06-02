@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoFrom should render properly 1`] = `
+<TodoForm
+  onSubmit={[Function]}
+  placeholder="add a todo"
+>
+  <form
+    className="todo-form"
+    onSubmit={[Function]}
+  >
+    <span
+      className="todo-form__plus-icon"
+    >
+      +
+    </span>
+    <input
+      className="todo-form__input"
+      onChange={[Function]}
+      placeholder="add a todo"
+      value=""
+    />
+  </form>
+</TodoForm>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox should render properly 1`] = `
+<Checkbox
+  checked={true}
+  onClick={[Function]}
+>
+  <span
+    className="checkbox checkbox--checked"
+    onClick={[Function]}
+  />
+</Checkbox>
+`;
+
+exports[`Checkbox should render properly 2`] = `
+<Checkbox
+  checked={false}
+  onClick={[Function]}
+>
+  <span
+    className="checkbox false"
+    onClick={[Function]}
+  />
+</Checkbox>
+`;

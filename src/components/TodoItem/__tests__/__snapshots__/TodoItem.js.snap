@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem should render properly 1`] = `
+<TodoItem
+  detail="something"
+  done={true}
+  id={1}
+>
+  <li
+    className="todo-item"
+  >
+    <span
+      className="todo-item__checkbox"
+    >
+      <Checkbox
+        checked={true}
+        onClick={[Function]}
+      >
+        <span
+          className="checkbox checkbox--checked"
+          onClick={[Function]}
+        />
+      </Checkbox>
+    </span>
+    <input
+      className="todo-item__input todo-item__input--done"
+      onChange={[Function]}
+      value="something"
+    />
+    <button
+      className="todo-item__remove-btn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-trash"
+      />
+    </button>
+  </li>
+</TodoItem>
+`;
+
+exports[`TodoItem should render properly 2`] = `
+<TodoItem
+  detail="something"
+  done={false}
+  id={2}
+>
+  <li
+    className="todo-item"
+  >
+    <span
+      className="todo-item__checkbox"
+    >
+      <Checkbox
+        checked={false}
+        onClick={[Function]}
+      >
+        <span
+          className="checkbox false"
+          onClick={[Function]}
+        />
+      </Checkbox>
+    </span>
+    <input
+      className="todo-item__input "
+      onChange={[Function]}
+      value="something"
+    />
+    <button
+      className="todo-item__remove-btn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-trash"
+      />
+    </button>
+  </li>
+</TodoItem>
+`;

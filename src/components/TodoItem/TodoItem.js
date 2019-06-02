@@ -30,7 +30,7 @@ TodoItem.propTypes = {
   detail: string,
   done: bool,
   onToggleDone: func,
-  onDone: func,
+  onDelete: func,
   onEdit: func,
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import TodoForm from 'components/TodoForm'
+import TodoItemList from 'components/TodoItemList'
 
 class App extends React.Component {
   state = {
@@ -54,21 +55,14 @@ class App extends React.Component {
         <TodoForm onSubmit={this.onCreateTodo} placeholder="Add a to-do..." />
         <div>ProgressBar</div>
         <div>todo</div>
-        <ul>
-          {todoItems.map(item => (
-            <li key={item.id} onClick={() => this.onToggleDone(item.id)}>
-              {item.detail} <button onClick={() => this.onDelete(item.id)}>delete</button>
-            </li>
-          ))}
-        </ul>
+        <TodoItemList
+          items={todoItems}
+          onDelete={this.onDelete}
+          onToggleDone={this.onToggleDone}
+          onEdit={this.onEdit}
+        />
         <div>done</div>
-        <ul>
-          {doneItems.map(item => (
-            <li key={item.id} onClick={() => this.onToggleDone(item.id)}>
-              {item.detail} <button onClick={() => this.onDelete(item.id)}>delete</button>
-            </li>
-          ))}
-        </ul>
+        <TodoItemList items={doneItems} onDelete={this.onDelete} onToggleDone={this.onToggleDone} />
       </div>
     )
   }

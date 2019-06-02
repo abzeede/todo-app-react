@@ -1,0 +1,59 @@
+.todo-item {
+  background-color: #fff;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  border-radius: 4px;
+  height: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.15s ease-in-out;
+
+  &__checkbox {
+    display: flex;
+    flex-basis: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  &__input {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+    font-size: 1em;
+    color: #262626;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--done {
+      text-decoration: line-through;
+      color: #8e8e8e;
+    }
+  }
+
+  &__remove-btn {
+    height: 30px;
+    width: 35px;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    font-size: 1em;
+    color: #262626;
+    cursor: pointer;
+    transition: 0.15s background, color ease-in-out;
+    visibility: hidden;
+
+    &:hover {
+      background: #ef5350;
+      color: white;
+    }
+  }
+
+  &:hover {
+    .todo-item__remove-btn {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.checkbox {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  border-radius: 15px;
+  border: 1px solid #c4c7c7;
+  color: #f3f3f3;
+  background: #c4c7c7;
+
+  &::after {
+    content: '\2713';
+  }
+
+  &--checked,
+  &:hover {
+    background-color: #38b549;
+    border-color: #38b549;
+  }
+
+  &--checked:hover {
+    border: 1px solid #c4c7c7;
+    color: #f3f3f3;
+    background: #c4c7c7;
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { number, string, bool, func } from 'prop-types'
+import Checkbox from 'components/Checkbox'
 import './style.scss'
 
 const TodoItem = ({ id, detail, done, onDelete, onToggleDone, onEdit }) => {
@@ -10,7 +11,7 @@ const TodoItem = ({ id, detail, done, onDelete, onToggleDone, onEdit }) => {
   return (
     <li className="todo-item">
       <span className="todo-item__checkbox">
-        <input type="checkbox" onClick={() => onToggleDone(id)} checked={done} />
+        <Checkbox onClick={() => onToggleDone(id)} checked={done} />
       </span>
       <input
         className={`todo-item__input ${done ? 'todo-item__input--done' : ''}`}

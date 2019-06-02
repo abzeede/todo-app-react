@@ -1,6 +1,6 @@
 import React from 'react'
 import { shape, arrayOf, string, bool, number, func } from 'prop-types'
-import TodoItem from '../TodoItem'
+import TodoItem from 'components/TodoItem'
 import './style.scss'
 
 const TodoItemList = ({ items, ...props }) => {

@@ -13,7 +13,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js')
 
-importScripts('/todo-app-react/precache-manifest.89a6961b6ea01dccd33e8481497e447b.js')
+importScripts('/todo-app-react/precache-manifest.1a956d6a8fa996b10ce74dde29c3bdb0.js')
 
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {

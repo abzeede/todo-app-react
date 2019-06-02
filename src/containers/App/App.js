@@ -1,6 +1,7 @@
 import React from 'react'
 import TodoForm from 'components/TodoForm'
 import TodoItemList from 'components/TodoItemList'
+import ProgressBar from 'components/ProgressBar'
 
 class App extends React.Component {
   state = {
@@ -53,8 +54,7 @@ class App extends React.Component {
     return (
       <div>
         <TodoForm onSubmit={this.onCreateTodo} placeholder="Add a to-do..." />
-        <div>ProgressBar</div>
-        <div>todo</div>
+        <ProgressBar items={this.state.items} showPercent />
         <TodoItemList
           items={todoItems}
           onDelete={this.onDelete}
